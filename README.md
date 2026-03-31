@@ -1,14 +1,13 @@
-# @pipeworx/mcp-carbon
+# mcp-carbon
 
-MCP server for carbon intensity data — electricity carbon emissions by region.
+Carbon MCP — UK Carbon Intensity API (free, no auth)
+
+Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_intensity` | Get current UK national carbon intensity (forecast, actual, index) |
-| `get_intensity_by_date` | Get carbon intensity data for every half-hour period of a given date |
-| `get_generation_mix` | Get current UK electricity generation mix by fuel type |
 
 ## Quick Start
 
@@ -24,7 +23,7 @@ Add to your MCP client config:
 }
 ```
 
-Or run via CLI:
+Or use the CLI:
 
 ```bash
 npx pipeworx use carbon

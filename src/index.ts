@@ -1,12 +1,3 @@
-/**
- * Carbon MCP — UK Carbon Intensity API (free, no auth)
- *
- * Tools:
- * - get_intensity: current national carbon intensity (forecast, actual, index)
- * - get_intensity_by_date: carbon intensity for a specific date (YYYY-MM-DD)
- * - get_generation_mix: current electricity generation mix by fuel type
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -21,6 +12,16 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Carbon MCP — UK Carbon Intensity API (free, no auth)
+ *
+ * Tools:
+ * - get_intensity: current national carbon intensity (forecast, actual, index)
+ * - get_intensity_by_date: carbon intensity for a specific date (YYYY-MM-DD)
+ * - get_generation_mix: current electricity generation mix by fuel type
+ */
+
 
 const BASE_URL = 'https://api.carbonintensity.org.uk';
 
