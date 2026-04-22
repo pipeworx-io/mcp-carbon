@@ -1,8 +1,8 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/carbon",
-  "title": "caruon",
-  "description": "Carbon MCP — UK Carbon Intensity API (free, no auth)",
+  "title": "Carbon",
+  "description": "Carbon MCP \u2014 UK Carbon Intensity API (free, no auth)",
   "version": "0.1.0",
   "websiteUrl": "https://pipeworx.io/packs/carbon",
   "repository": {
