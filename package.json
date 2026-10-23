@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-carbon",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Carbon MCP — UK Carbon Intensity API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-0e5211054fcbdcadd1ca998c7109fbef288e2ccb03903d90af1869193350017d",
-    "sourceCommit": "5d8d3a58a457b8464c117515d81b8b6ecb53fdfb"
+    "sourceHash": "v1-a23bb4a508dccbe9e87967ae5a8046163a491e4f52260ac2d614ea7a0a6988c4",
+    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
   }
 }
