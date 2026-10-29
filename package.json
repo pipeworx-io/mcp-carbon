@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-carbon",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Carbon MCP — UK Carbon Intensity API (free, no auth)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-carbon": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "carbon"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-carbon.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/carbon",
   "pipeworx": {
-    "sourceHash": "v1-a23bb4a508dccbe9e87967ae5a8046163a491e4f52260ac2d614ea7a0a6988c4",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "carbon",
+    "gatewaySlug": "carbon",
+    "sourceHash": "v1-6a51c61d1124cc49e0c404955081153d3d1320d30ade2c05fda7ed972e2af174",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }

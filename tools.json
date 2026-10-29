@@ -1,0 +1,59 @@
+[
+  {
+    "name": "get_intensity",
+    "description": "Check current UK electricity carbon intensity. Returns gCO2/kWh (forecast and actual) plus intensity level (very low to very high). Use to schedule energy-intensive tasks during low-carbon periods.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_intensity_by_date",
+    "description": "Get UK electricity carbon intensity for every 30-minute period on a specific date (e.g., \"2024-01-15\"). Returns gCO2/kWh forecast and actual. Use to identify lowest-carbon hours.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "Date in YYYY-MM-DD format (e.g., 2024-03-15)"
+        }
+      },
+      "required": [
+        "date"
+      ]
+    }
+  },
+  {
+    "name": "get_generation_mix",
+    "description": "Check current UK electricity grid composition by source percentage (gas, coal, wind, solar, nuclear, hydro, biomass, imports). Use to understand real-time grid energy mix.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_regional_intensity",
+    "description": "Carbon intensity (forecast gCO2/kWh + index band) and generation mix for a specific Great Britain region. Pass \"postcode\" (UK outcode — first half of a postcode, e.g. \"RG10\") or \"regionid\" (1–17, e.g. 13 = London). Omit both for all regions at the current half-hour. Regional figures are forecast-only.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "postcode": {
+          "type": "string",
+          "description": "UK outcode (first part of a postcode), e.g. \"RG10\". No spaces."
+        },
+        "regionid": {
+          "type": "number",
+          "description": "GB region id 1–17 (e.g. 13 = London)."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_intensity_factors",
+    "description": "Carbon intensity factors (gCO2/kWh) per fuel type used in the headline figures — e.g. Coal 937, Gas (Combined Cycle) 394, Nuclear 0, Wind 0, Solar 0.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
