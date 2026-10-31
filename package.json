@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-carbon",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Carbon MCP — UK Carbon Intensity API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "carbon",
     "gatewaySlug": "carbon",
-    "sourceHash": "v1-6a51c61d1124cc49e0c404955081153d3d1320d30ade2c05fda7ed972e2af174",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-9187b8fcff3f0e316828b0dfc422d3a1823701813ae52a67f267b05a2dddd199",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
